@@ -12,15 +12,14 @@
   <script type="text/javascript">
   function openURL()
   {
-      var shell = new ActiveXObject("WScript.Shell");
-      shell.run("Firefox http://www.google.com");
+      window.open('http://www.google.com', '_blank');
   }
   </script>
 </head>
 <body>
 
 
-<input type="button" onclick="openURL()" value="Open Google in Firefox">
+<input type="button" onclick="openURL()" value="Open Google in Blank">
 
 </body>
 
