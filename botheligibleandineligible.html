@@ -1,0 +1,42 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.googleapis.com/",
+    "@type": "ARArtifact",
+    "arTarget": {
+      "@type": "ARImageTarget",
+      "name" : "Should not work",
+      "image": "https://www.1025theriver.com/wp-content/uploads/2017/10/404-website.png"
+    },
+    "arAccessSpecification": {
+      "@type": "ARAccessSpecification",
+      "eligibleRegion": [
+        {
+          "@type": "Country",
+          "name": "IN"
+        }, {
+          "@type": "Country",
+          "name": "US"
+        }
+      ],
+      "ineligibleRegion": [
+        {
+          "@type": "Country",
+          "name": "IN"
+        }, {
+          "@type": "Country",
+          "name": "US"
+        }
+      ]
+    },
+    "arContent": {
+      "@type": "WebPage",
+      "name": "This page shouldn't work",
+      "url": "https://unsplash.com/search/photos/success",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Google Lens",
+        "logo": "https://raw.githubusercontent.com/belindazeng/examples/master/lens.png"
+      }
+    }
+  }
+</script>
