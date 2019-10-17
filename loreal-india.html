@@ -1,0 +1,38 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.googleapis.com/",
+    "@type": "ARArtifact",
+    "arTarget": {
+      "@type": "ARImageTarget",
+      "name" : "L'Oreal Rouge Lipstick",
+      "image": "https://raw.githubusercontent.com/belindazeng/examples/master/loreal-rouge.jpg"
+    },
+    "arAccessSpecification": {
+    // The value of arAccessSpecification.@type must be ARAccessSpecification.
+    "@type": "ARAccessSpecification",
+    
+    // To whitelist more than one country, add an inegigibleRegion field.
+    "eligibleRegion": [
+      {
+        // For each country, add values for eligibleRegion.@type and eligibleRegion.name.
+        // The value of @type must be Country and the value of name must be the
+        // Alpha 2 country code defined by ISO 3166-1 for that country.
+        "@type": "Country",
+        "name": "ISO_3166-1_ALPHA-2_CODE"
+      },
+      …
+    ]
+  },
+    "arContent": {
+      "@type": "WebPage",
+      "name": "Try it yourself",
+      "image": "https://www.nykaa.com/media/wysiwyg/LP_RSMLLbanner.jpg",
+      "url": "https://www.youtube.com/watch?v=_WSfYZEL8fk",
+      "publisher": {
+        "@type": "Organization",
+        "name": "L'oreal",
+        "logo": "https://raw.githubusercontent.com/belindazeng/examples/master/loreal.png"
+      }
+    }
+  }
+</script>
