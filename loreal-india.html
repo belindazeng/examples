@@ -5,24 +5,20 @@
     "arTarget": {
       "@type": "ARImageTarget",
       "name" : "L'Oreal Rouge Lipstick",
-      "image": "https://raw.githubusercontent.com/belindazeng/examples/master/loreal-rouge.jpg"
+      "image": "https://i.ytimg.com/vi/UQyOLxGpBgI/maxresdefault.jpg"
     },
     "arAccessSpecification": {
-    // The value of arAccessSpecification.@type must be ARAccessSpecification.
-    "@type": "ARAccessSpecification",
-    
-    // To whitelist more than one country, add an inegigibleRegion field.
-    "eligibleRegion": [
-      {
-        // For each country, add values for eligibleRegion.@type and eligibleRegion.name.
-        // The value of @type must be Country and the value of name must be the
-        // Alpha 2 country code defined by ISO 3166-1 for that country.
-        "@type": "Country",
-        "name": "ISO_3166-1_ALPHA-2_CODE"
-      },
-      …
-    ]
-  },
+      "@type": "ARAccessSpecification",
+      "eligibleRegion": [
+        {
+          "@type": "Country",
+          "name": "IN"
+        }, {
+          "@type": "Country",
+          "name": "US"
+        }
+      ]
+    },
     "arContent": {
       "@type": "WebPage",
       "name": "Try it yourself",
@@ -31,7 +27,7 @@
       "publisher": {
         "@type": "Organization",
         "name": "L'oreal",
-        "logo": "https://raw.githubusercontent.com/belindazeng/examples/master/loreal.png"
+        "logo": "https://www.maybelline.co.in/lips/lip-stick/color-sensational-loaded-bolds"
       }
     }
   }
